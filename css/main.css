@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+.bg-while {
+    background-color: white;
+}
+
 .center {
     width: 1200px;
     margin: 0 auto;
@@ -459,3 +463,102 @@ header {
     padding: 20px 0;
 }
 /* END BANNER */
+
+/* SHOPEE MALL */
+
+.container-shopeemall {
+
+}
+
+.container-shopeemall .shopeemall-top {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.container-shopeemall .shopeemall-top .shopeemall-top_left {
+    display: flex;
+}
+
+.container-shopeemall .shopeemall-top .shopeemall-top_left .shopeemall-top_left--title {
+    padding: 0 20px;
+    color: #D2011B;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.container-shopeemall .shopeemall-top .shopeemall-top_left .shopeemall-top_left--text {
+    padding: 0 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container-shopeemall .shopeemall-top .shopeemall-top_right {
+    margin-right: 20px;
+}
+
+.container-shopeemall .shopeemall-top .shopeemall-top_right a {
+    color: #d0011b;
+}
+
+/* SHOPEE MALL BOTTOM */
+
+.container-shopeemall .shopeemall-bottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-shopeemall .shopeemall-bottom .shopeemall-bottom_left {
+    margin-left: 10px;
+}
+
+.container-shopeemall .shopeemall-bottom .shopeemall-bottom_left .shopeemall-left_img {
+    height: 100%;
+}
+
+.container-shopeemall .shopeemall-bottom .shopeemall-bottom_left .shopeemall-left_img img {
+    height: 100%;
+    width: 380px;
+}
+
+.container-shopeemall .shopeemall-bottom .shopeemall-bottom_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.container-shopeemall .shopeemall-bottom .shopeemall-bottom_right .shopeemall-bottom_right--img {
+    width: 200px;
+    height: 236px;
+    position: relative;
+}
+
+.container-shopeemall .shopeemall-bottom .shopeemall-bottom_right .shopeemall-bottom_right--img-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #d0011b;
+    bottom: 8px;
+}
+
+.container-shopeemall .shopeemall-bottom .shopeemall-bottom_right .shopeemall-bottom_right--img img {
+    height: 100%;
+    width: 100%;
+}
+
+/* END SHOPEE MALL */
+
+/* TOP SEARCH */
+
+.container-topsearch {
+    padding: 20px 0;
+}
+
+/* END TOP SEARCH */
