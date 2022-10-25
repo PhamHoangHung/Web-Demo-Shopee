@@ -41,7 +41,7 @@ a {
 }
 
 .main {
-    height: 100vh;
+    height: 1000vh;
 }
 /* HEADER */
 
@@ -90,6 +90,7 @@ header {
     text-align: center;
     border-radius: 4px;
     display: none;
+    z-index: 1;
 }
 
 .dowload-app .dowload-app_gallery img,
@@ -106,8 +107,8 @@ header {
 }
 
 .dowload-app .dowload-app_gallery {
-    margin: 0 10px;
-    display: block;
+   display: flex;
+   margin: 15px 13px 15px;
 }
 
 .header-top_left a:hover .dowload-app {
@@ -121,6 +122,7 @@ header {
     position: absolute;
     right: 10px;
     display: none;
+    z-index: 1;
 }
 
 .notification::before {
@@ -136,8 +138,9 @@ header {
 
 .notification .notification-img {
     text-align: center;
-    display: block; 
-    line-height: 300px;
+    display: flex; 
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -178,6 +181,13 @@ header {
     height: 50px;
     color: #fff;
 }
+
+.header-bottom .header-bottom_logo .logo {
+    width: 132px;
+    height: 44px;
+    object-fit: cover;
+    fill: #fff;
+  }
 
 .header-bottom .header-bottom_search-input {
     min-width: 840px;
@@ -321,3 +331,124 @@ header {
     font-size: 14px;
     color: #373737;
 }
+
+/* END CATEROGY */
+
+/* FLASHSALE */
+
+.container-flashsale {
+    background-color: white;
+    margin-top: 20px;
+}
+
+.container-flashsale .flashsale-top {
+    display: flex;
+    padding: 15px 0 0 20px;
+    height: 60px;
+}
+
+.container-flashsale .flashsale-top .flashsale-top_img {
+    display: flex;
+    align-items: center;
+}
+
+.container-flashsale .flashsale-top .flashsale-top_img img {
+    height: 30px;
+    width: 150px;
+}
+
+.container-flashsale .flashsale-top .flashsale-top_time {
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.container-flashsale .flashsale-top .flashsale-top_time .flashsale-top_time--item {
+    background-color: #000;
+    color: white;
+    height: 18px;
+    width: 20px;
+    margin: 0 3px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 2px;
+}
+
+/* FLASH-BOTTOM */
+
+.container-flashsale .flashsale-bottom {
+    height: 248px;
+    margin-top: 15px;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product {
+    display: flex;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product .flashsale-bottom_product--img {
+    width: 200px;
+    height: 248px;
+    text-align: center;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product .flashsale-bottom_product--img .flashsale-bottom_img {
+    position: relative;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product .flashsale-bottom_product--img .flashsale-bottom_img::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assest/imgs/banner-sale-freeship.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 170px;
+    height: 170px;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product .flashsale-bottom_product--img .flashsale-bottom_price {
+    
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product .flashsale-bottom_product--img .flashsale-bottom_price .price-number {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ee4d2d;
+    margin-top: 13px;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product .flashsale-bottom_product--img .flashsale-bottom_price .price-sold {
+    width: 136px;
+    margin: 0 auto;
+    background-color: #FFBDA6;
+    border-radius: 20px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 7px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product .flashsale-bottom_product--img .flashsale-bottom_price .price-sold .z1 {
+    z-index: 1;
+}
+
+.price-sold_item {
+    height: 100%;
+    width: var(--percent);
+    /* background-color: #EC1F16; */
+    position: absolute;
+    left: 0;
+    border-radius: 20px;
+    background-image: url(/assest/imgs/percent.png);
+    background-repeat: no-repeat;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product .flashsale-bottom_product--img img {
+    width: 170px;
+    height: 170px;
+}
+
+/* END FLASHSALE */
