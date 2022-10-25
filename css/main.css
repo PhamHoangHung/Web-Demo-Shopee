@@ -452,3 +452,10 @@ header {
 }
 
 /* END FLASHSALE */
+
+/* BANNER */
+
+.container-banner {
+    padding: 20px 0;
+}
+/* END BANNER */
