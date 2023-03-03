@@ -513,7 +513,7 @@ header {
     background-color: #000;
     color: white;
     height: 18px;
-    width: 20px;
+    width: 24px;
     margin: 0 3px;
     text-align: center;
     line-height: 18px;
@@ -607,6 +607,7 @@ header {
 .container-flashsale .flashsale-bottom .flashsale-bottom_product--change {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     z-index: 5;
     top: 50%;
@@ -625,21 +626,60 @@ header {
     padding: 10px;
 }
 
-.container-flashsale .flashsale-bottom .flashsale-bottom_product--change buttom:hover {
-    background-color: rgba(0, 0, 0, 0.475);
-
-}
-
 .container-flashsale .flashsale-bottom .flashsale-bottom_product--change buttom { 
     background-color: rgba(0,0,0,.18);
     opacity: 1;
     transition: 0.3s;
 }
 
-.container-flashsale .flashsale-bottom .flashsale-bottom_product--change buttom i {
-    font-size: 22px;
-    transition: 0.3s;
+.container-flashsale .flashsale-bottom .flashsale-bottom_product--change .prev {
+    transform: translateX(calc(-50% - 0px));
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #FFF;
+    box-shadow: 0 1px 12px 0 rgba(0,0,0,.12);
+}
 
+.container-flashsale .flashsale-bottom .flashsale-bottom_product--change .prev:hover {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    transition: 0.2s linear;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product--change .next {
+    transform: translateX(calc(50% - 0px));
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #FFF;
+    box-shadow: 0 1px 12px 0 rgba(0,0,0,.12);
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product--change .next:hover {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    transition: 0.2s linear;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product--change buttom i {
+    font-size: 13px;
+    transition: 0.3s;
+    color: #858585;
+}
+
+.container-flashsale .flashsale-bottom .flashsale-bottom_product--change buttom:hover i {
+    font-size: 22px;
 }
 
 /* END FLASHSALE */

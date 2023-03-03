@@ -29,6 +29,8 @@
 //     }
 //     };   
 
+        // EVENT CLICK SLIDER
+
         const slider = document.querySelector('.container-slider-left');
         const slidersMain = document.querySelector('.slider-left');
         const item = document.querySelectorAll('.slider-left_item');
@@ -85,9 +87,45 @@
         };
 
 
-        const flashsale = document.querySelector('.container-slider-left');
-        const flashsaleMain = document.querySelector('.slider-left');
-        const flashsaleItem = document.querySelectorAll('.slider-left_item');
+        // const flashsale = document.querySelector('.container-slider-left');
+        // const flashsaleMain = document.querySelector('.slider-left');
+        // const flashsaleItem = document.querySelectorAll('.slider-left_item');
 
 
- 
+        // EVENT COUTDOWN
+
+        let fuT = new Date("Mar 04, 2024 15:30:00").getTime();
+        setInterval(function() {
+            let noW = new Date().getTime();
+            let D = fuT - noW;
+            let days = Math.floor(D/(1000*60*60*24));
+            let hours = Math.floor(D/(1000*60*60));
+            let minutes = Math.floor(D/(1000*60));
+            let seconds = Math.floor(D/(1000));
+            hours%=24;
+            minutes%=60;
+            seconds%=60;
+
+            // if (days <= 9) {
+            //     days = "0" + days;
+            // }
+
+            if (hours <= 9) {
+                hours = "0" + hours;
+            }
+
+            if (minutes <= 9) {
+                minutes = "0" + minutes;
+            }
+
+            if (seconds <= 9) {
+                seconds = "0" + seconds;
+            }
+
+            // document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        }, 1000);
+
+        
