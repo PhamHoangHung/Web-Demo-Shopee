@@ -93,6 +93,8 @@
         // const flashsaleMain = document.querySelector('.slider-left');
         // const flashsaleItem = document.querySelectorAll('.slider-left_item');
 
+        // END EVENT CLICK SLIDER
+
 
         // EVENT COUTDOWN
 
@@ -130,6 +132,10 @@
             document.getElementById('seconds').innerText = seconds;
         }, 1000);
 
+        // END EVENT COUTDOWN
+
+        // LOGIN MODAL
+
         const loginModal = document.querySelector('.js-login');
         const registerModal = document.querySelector('.js-register');
         const bodyModal = document.querySelector('.js-body-modal');
@@ -156,18 +162,39 @@
 
             modalContainer.addEventListener("click", (event) => {
                 event.stopPropagation()
-            })
+            });
 
         const registerButton = document.getElementById("register");
         const loginButton = document.getElementById("login");
         const container = document.getElementById("container");
 
         registerButton.addEventListener("click", () => {
-        container.classList.add("right-panel-active");
+            container.classList.add("right-panel-active");
         });
 
         loginButton.addEventListener("click", () => {
-        container.classList.remove("right-panel-active");
+            container.classList.remove("right-panel-active");
         });
 
+        // END LOGIN MODAL
+
+        // ADVERTISEMENT MODAL
+
+        const advertisementIcon = document.querySelector('.js-advertisement-icon');
+        const modalAdvertisement = document.querySelector('.js-modal-advertisement');
         
+        advertisementIcon.addEventListener("click", () => {
+            modalAdvertisement.classList.add("close");
+        });
+
+        modalAdvertisement.addEventListener("click", () => {
+            modalAdvertisement.classList.add("close");
+        });
+
+        const advertisementImg = document.querySelector('.js-advertisement-img');
+
+        advertisementImg.addEventListener("click", (event) => {
+            event.stopPropagation()
+        });
+
+        // END ADVERTISEMENT MODAL
