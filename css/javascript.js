@@ -41,7 +41,6 @@
         const sliderItemWidth = item[0].offsetWidth;
         let postionX = 0;
         let index = 0;
-        console.log('sliderItemWidth : ', slidesLength)
 
 
         next.addEventListener("click", function () {
@@ -54,7 +53,10 @@
 
         [...dotItems].forEach( item => 
             item.addEventListener("click", function(e) {
-                [...dotItems].forEach((el) => el.classList.remove("active"));
+
+                [...dotItems].forEach( (el) => 
+                el.classList.remove("active"));
+
                 e.target.classList.add("active");
                 const sildeIndex = parseInt(e.target.dataset.index);
                 index = sildeIndex;
@@ -127,5 +129,45 @@
             document.getElementById('minutes').innerText = minutes;
             document.getElementById('seconds').innerText = seconds;
         }, 1000);
+
+        const loginModal = document.querySelector('.js-login');
+        const registerModal = document.querySelector('.js-register');
+        const bodyModal = document.querySelector('.js-body-modal');
+        const modalContainer = document.querySelector('.js-modalContainer');
+
+        // loginModal.addEventListener("click", () => {
+        //     bodyModal.classList.add("open");
+        // });
+ 
+            loginModal.addEventListener("click", () => {
+                    bodyModal.classList.add("open");
+                    container.classList.remove("right-panel-active");
+            });
+
+            registerModal.addEventListener("click", () => {
+                container.classList.add("animation-none");
+                container.classList.add("right-panel-active");
+                bodyModal.classList.add("open");
+            });
+
+            bodyModal.addEventListener("click", () => {
+                bodyModal.classList.remove("open");
+            });
+
+            modalContainer.addEventListener("click", (event) => {
+                event.stopPropagation()
+            })
+
+        const registerButton = document.getElementById("register");
+        const loginButton = document.getElementById("login");
+        const container = document.getElementById("container");
+
+        registerButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+        });
+
+        loginButton.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
+        });
 
         
