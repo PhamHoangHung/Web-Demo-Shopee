@@ -29,6 +29,10 @@ body {
     background-color: white;
 }
 
+.bg-f5f5f5 {
+    background-color: f5f5f5;
+}
+
 .pdt-120 {
     padding-top: 120px;
 }
@@ -131,7 +135,7 @@ header {
     border-radius: 4px;
     display: none;
     z-index: 1;
-    box-shadow: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
 }
 
 .dowload-app .dowload-app_gallery img,
@@ -200,15 +204,45 @@ header {
 .language {
     width: 200px;
     height: 80px;
-    background-color: yellow;
+    padding: 5px 0;
+    background-color: #fff;
     position: absolute;
     right: 10px;
-    display: none;
-    z-index: 1;
+    display: grid;
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    top: 37px;
+}
+
+.language::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    right: 3px;
+    top: 2px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    z-index: -1;
+}
+
+.language .language-item {
+    line-height: 35px;
+    padding-left: 5px;
 }
 
 .language .language-item a {
     color: #000;
+}
+
+.language .language-item a:hover {
+    color: #ee4d2d;
+}
+
+.language .language-item a.active-language {
+    color: #ee4d2d;
 }
 
 /* HEADER BOTTOM */
@@ -941,13 +975,50 @@ header {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
+/* .container-showproduct .showproduct-center_child {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.4); 
+    background: #fff;
+} */
+
 .container-showproduct .showproduct-center .showproduct-center_item {
-    width: 200px;
+    width: 190px;
     height: 292px;
-    padding: 5px;
+    margin: 5px;
     position: relative;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(1),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(2),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(3),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(4),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(5),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(6),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(7),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(8),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(9),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(10),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(11),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(12),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(13),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(14),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(15),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(16),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(17),
+.container-showproduct .showproduct-center .showproduct-center_item:nth-child(18) {
+  display: inline-block;
 }
 
 .container-showproduct .showproduct-center .showproduct-center_item:hover .find-products {
@@ -955,7 +1026,7 @@ header {
 }
 
 .container-showproduct .showproduct-center .showproduct-center_item .find-products {
-    width: 200px;
+    width: 190px;
     height: 32px;
     background-color: #EE4D2D;
     position: absolute;
@@ -1023,9 +1094,12 @@ header {
 .container-showproduct .showproduct-bottom .showproduct-bottom_see {
     width: 390px;
     height: 40px;
+    cursor: pointer;
 }
 
-.container-showproduct .showproduct-bottom .showproduct-bottom_see a {
+
+
+.container-showproduct .showproduct-bottom .showproduct-bottom_see div {
     line-height: 40px;
     display: block;
     height: 100%;
@@ -1033,6 +1107,11 @@ header {
     border: 1px solid #eaeaea;
     color: rgba(0, 0, 0, 0.707);
     text-align: center;
+    background-color: #FFF;
+}
+
+.container-showproduct .showproduct-bottom .showproduct-bottom_see:hover div {
+        background: rgba(0,0,0,.02);
 }
 
 .container-showproduct .showproduct-bottom .showproduct-bottom_see a:hover {

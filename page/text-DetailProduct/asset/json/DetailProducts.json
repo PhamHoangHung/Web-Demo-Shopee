@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+		"image": "./assest/imgs/product-1.jfif",
+		"name": "Áo Bomber Phối Tay KHN01, Áo nhung tăm 2 lớp kiểu dáng bóng chày đẹp cá tính cho cả nam và nữ",
+		"price": "₫ 95.000",
+		"sold": "Đã bán 3k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+    
+    {
+        "id": 2,
+		"image": "./assest/imgs/product-2-2.webp",
+		"name": "ÁO KHOÁC BOMBER NAM  NỮ PHONG  CÁCH BÓNG CHÀY THỜI TRANG HOTTREND",
+		"price": "₫ 81.000",
+		"sold": "Đã bán 1,3k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 3,
+		"image": "./assest/imgs/product-3-3.webp",
+		"name": "Váy đầm nữ dáng xòe tay bồng xếp tầng xinh xắn dành cho các nằng đi chơi đi tiệc",
+		"price": "₫ 140.000",
+		"sold": "Đã bán 5k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 4,
+		"image": "./assest/imgs/product-4-4.webp",
+		"name": "Túi đeo chéo dành cho các Boy thích cháy phố, giảm giá cực mạnh, siêu rẻ",
+		"price": "₫ 155.000",
+		"sold": "Đã bán 642",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 5,
+		"image": "./assest/imgs/product-5-5.jfif",
+		"name": "Mô Hình Chi Bi Các Nhân Vật Anime Siêu Rẻ",
+		"price": "₫ 22.000",
+		"sold": "Đã bán 3k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 6,
+		"image": "./assest/imgs/product-6-6.jfif",
+		"name": "Kính Đen Siêu Mát, Siêu Ngầu",
+		"price": "₫ 185.000",
+		"sold": "Đã bán 152",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 7,
+		"image": "./assest/imgs/product-7.jfif",
+		"name": "Sách - Tự Học 2000 Từ Vựng Tiếng Anh Theo Chủ Đề Phiên Bản Khổ Nhỏ Dành Cho Người Học Căn Bản - Học Kèm App Online",
+		"price": "₫ 45.000",
+		"sold": "Đã bán 1k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 8,
+		"image": "./assest/imgs/product-8.jfif",
+		"name": "Áo Len Nam Cổ Lọ SUKIYA Chất Len mềm mịn kiểu dáng Hàn Quốc AL14",
+		"price": "₫ 140.000",
+		"sold": "Đã bán 19,5k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 9,
+		"image": "./assest/imgs/product-9.jfif",
+		"name": "Sách Đắc Nhân Tâm( khổ lớn )",
+		"price": "₫ 50.000",
+		"sold": "Đã bán 36k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 10,
+		"image": "./assest/imgs/product-10.jfif",
+		"name": "[Bạn mới nhập COSHBM -50% đơn 0Đ] Bọt vệ sinh nam giới Oniiz Dung dịch tạo bọt 100ml",
+		"price": "₫ 105.000",
+		"sold": "Đã bán 12k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 11,
+		"image": "./assest/imgs/product-11.jfif",
+		"name": "Thùng 48 hộp sữa nước Nestle Milo 180ml/ hộp",
+		"price": "₫ 345.000",
+		"sold": "Đã bán 32k",
+		"find": "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 12,
+		"image": "./assest/imgs/product-12.jfif",
+		"name": "Nước dưỡng tóc tinh dầu bưởi Cocoon giúp giảm gãy rụng & làm mềm tóc 140ml",
+		"price": "₫ 123.000",
+		"sold": "Đã bán 1k",
+		"find": "Tìm sản phẩm tương tự"
+    },    
+
+    {
+        "id": 13,
+        "image" : "./assest/imgs/product-13.jfif",     
+        "name": "Đồ bộ nữ mặc nhà SUNNY họa tiết xinh xắn, đồ ngủ dài tay dễ thương",
+        "price" : "₫ 157.000",
+        "sold" : "Đã bán 1,3k",
+        "find" : "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 14,
+        "image": "./assest/imgs/product-14.jfif",        
+        "name": "[ Giá Sốc ] Thắt lưng nam LV, thắt lưng da cao cấp mặt kim loại nguyên khối trẻ trung lịch lãm TLLV001",
+        "price" : "₫ 30.000",
+        "sold" : "Đã bán 600",
+        "find" : "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 15,
+        "image" : "./assest/imgs/product-15.jfif",        
+        "name": "Dao mini xếp hình thành thẻ ATM an toàn bảo vệ bản thân F540SPAZ",
+        "price" : "₫ 50.000",
+        "sold" : "Đã bán 1k",
+        "find" : "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 16,
+        "image" : "./assest/imgs/product-16.jfif",        
+        "name": "Áo khoác nỉ hoodie cardigan nam nữ KN3 có khóa trơn 3 màu form rộng Ulzzang Unisex thời trang Thu Đông mới nhất 2022",
+        "price" : "₫ 100.000",
+        "sold" : "Đã bán 1,2k",
+        "find" : "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id":17,
+        "image" : "./assest/imgs/product-17.jfif",        
+        "name": "Áo Polo Nam Cổ Bẻ Thun Basic Cộc Tay Chất Cotton Co Dãn Thoáng Mát Phong Cách Trẻ Trung Thời Trang Zenkonu TOP NAM 230",
+        "price" : "₫ 151.000",
+        "sold" : "Đã bán 1,6k",
+        "find" : "Tìm sản phẩm tương tự"
+    },
+
+    {
+        "id": 18,
+        "image" : "./assest/imgs/product-18.jfif",        
+        "name": "Đồ bộ nữ mặc nhà SUNNY họa tiết xinh xắn, đồ ngủ dài tay dễ thương",
+        "price" : "₫ 157.000",
+        "sold" : "Đã bán 700",
+        "find" : "Tìm sản phẩm tương tự"
+    }
+
+]    

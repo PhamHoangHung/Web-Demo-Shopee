@@ -1,3 +1,5 @@
+
+
 // document.getElementById('next').onclick = function() {
 //     let lists = document.querySelectorAll('.slider-left_item');
 //     document.getElementById('.container-slider-left').appendChild(lists[0]);
@@ -29,6 +31,13 @@
 //     }
 //     };   
 
+
+        // CHANGE LANGUAGE
+
+        
+
+        // END CHANGE LANGUAGE
+
         // EVENT CLICK SLIDER
 
         const slider = document.querySelector('.container-slider-left');
@@ -51,19 +60,29 @@
             handleChangeSlide(-1);
         });
 
-        [...dotItems].forEach( item => 
+        [...dotItems].forEach( item => {
             item.addEventListener("click", function(e) {
+                console.log("item : ", item);
 
-                [...dotItems].forEach( (el) => 
-                el.classList.remove("active"));
+                [...dotItems].forEach( (el) => {
+                    console.log('el : ',el)
+                    el.classList.remove("active")
+                });
 
-                e.target.classList.add("active");
-                const sildeIndex = parseInt(e.target.dataset.index);
-                index = sildeIndex;
+                console.log("e : ", e)
+                console.log("e.target : ",e.target)
+
+                // e.target.classList.add("active");
+                item.classList.add("active");
+                const sildeIndex1 = parseInt(item.dataset.index);
+                console.log('sildeIndex1 : ',sildeIndex1);
+                // const sildeIndex = parseInt(e.target.dataset.index);
+                index = sildeIndex1;
                 postionX = -1 * index * sliderItemWidth;
                 slidersMain.style = `transform: translateX(${postionX}px)`;
                 console.log(index);
-        }));
+            })
+        });
 
         function handleChangeSlide(direction) {
             if (direction === 1) {
@@ -198,3 +217,106 @@
         });
 
         // END ADVERTISEMENT MODAL
+
+        // JSON
+
+        fetch(href="./assest/Json/js.json")
+
+        .then(function(response){
+            return response.json();
+        })
+
+        .then(function(products){
+            let placeholder = document.querySelector('.showproduct-center');
+            let out = "";
+            for(let product of products){
+                out += `
+                    <div class="showproduct-center_item">
+                        <a href="">
+                            <div class="showproduct-center_item--img">
+                                <img src='${product.image}'>
+                            </div>
+
+                            <span class="showproduct-center_item--span">${product.name}</span>
+
+                            <div class="showproduct-center_item--price">
+                                    <div class="showproduct-center_item--price-left">${product.price}</div>
+    
+                                    <div class="showproduct-center_item--price-right">${product.sold}</div>
+                            </div>
+
+                            <div class="find-products">
+                                    ${product.find}
+                            </div>
+                        </a>
+                    </div>
+                `;
+            }
+
+            placeholder.innerHTML = out;
+        });
+
+        // END JSON
+
+        // LOAD MORE BUTTOM
+
+        let loadMoreBtn = document.querySelector('.showproduct-bottom_see');
+        let currentItem = 18;
+
+        loadMoreBtn.onclick = () =>{
+        // let boxes = [...document.querySelectorAll('.container .box-container .box')];
+        let boxes = document.querySelectorAll('.showproduct-center_item');
+
+        console.log("boxes : ",boxes);
+        for (var i = currentItem; i < currentItem + 6; i++){
+            // i = 3; i < 3 + 3; i++ = 4;
+
+            boxes[i].style.display = 'inline-block';
+            // them display = inline-block vao boxes[4]
+            // luc nay i = 4 < 6 (currentItem + 3); i++ = 5
+            // them display = inline-block vao boxes[5]
+            // luc nay i = 5 < 6 (currentItem + 3); i++ = 6
+            // them display = inline-block vao boxes[6]
+            
+            // luc nay dieu kien i = 6 < (6) currentItem + 3 khong thoa dieu kien. thoat vong lap.
+        }
+        currentItem += 6;
+        // luc nay currentItem = 3 + 3 ==> currentItem = 6 
+        
+        console.log('currentItem : ',currentItem)
+
+        if(currentItem >= boxes.length){
+            // luc nay neu currentItem >= boxes.length (boxes.length = 9) thi them display = 'none' vao bien loadMoreBtn;
+            // luc nay` currentItem = 6 > 9 chua thoa dieu kien nen chay tiep' vong` lap.
+            loadMoreBtn.style.display = 'none';
+        }
+
+        /* 
+            lan nay chay tiep vong lap currentItem = 6;
+            for (var i = currentItem; i < currentItem + 3; i++){
+                i = 6; i < 6 + 3; i++ = 7;
+                boxes[i].style.display = 'inline-block';
+
+                them display = inline-block vao boxes[7]
+                luc nay i = 7 < 9 (currentItem + 3); i++ = 8
+                them display = inline-block vao boxes[8]
+                luc nay i = 8 < 9 (currentItem + 3); i++ = 9
+                them display = inline-block vao boxes[9]
+                luc nay dieu kien i = 9 < (9) currentItem + 3 khong thoa dieu kien. thoat vong lap.
+
+            currentItem += 3;
+                luc nay currentItem = 9 + 3 ==> currentItem = 12
+
+            if(currentItem >= boxes.length){
+                luc nay currentItem = 12 thoa dieu kien currentItem >= boxes.length (12 >= 9)
+                thi them display = 'none' vao bien loadMoreBtn
+                loadMoreBtn.style.display = 'none';
+            }   
+
+        */
+
+
+        }
+
+
+        // END LOAD MORE BUTTOM
