@@ -232,7 +232,7 @@
             for(let product of products){
                 out += `
                     <div class="showproduct-center_item">
-                        <a href="">
+                        <a href="/page/text-DetailProduct/page/DetailProducts.html">
                             <div class="showproduct-center_item--img">
                                 <img src='${product.image}'>
                             </div>
