@@ -548,8 +548,8 @@ header {
     cursor: pointer;
 }
 
-.color-222 {
-    color: #222;
+.color-000 {
+    color: #000;
 }
 
 .mg-l_20px {
@@ -635,6 +635,10 @@ header {
     display: flex;
     margin-bottom: 8px;
 }
+
+/* .detail-product_bottom--ringt .insurance .insurance_box .insurance_box-item .insurance_box-item--father .insurance_box-item--child .childs_item {
+        margin-left: 25px;
+} */
 
 .detail-product_bottom--ringt .insurance .insurance_box .insurance_box-item .insurance_box-item--father .insurance_box-item--child img {
     width: 25px;
@@ -1615,9 +1619,9 @@ button.btn_solid {
 .container-footer .footer-country .footer-country_left {
 }
 
-.container-footer .footer-country .footer-country_right {
+/* .container-footer .footer-country .footer-country_right {
     display: flex;
-}
+} */
 
 .container-footer .footer-country .footer-country_right a {
     display: block;
@@ -1626,8 +1630,14 @@ button.btn_solid {
 }
 
 .container-footer .footer-country .footer-country_right {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container-footer .footer-country .footer-country_right span {
+    padding: 0 4px;
+    border-right: 1px solid #ccc;
+    height: 20px;
 }
 
 /* FOOTER BOTTOM */

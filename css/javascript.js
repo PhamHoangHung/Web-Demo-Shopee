@@ -197,6 +197,18 @@
 
         // END LOGIN MODAL
 
+        // CLICK CLOSE LOGIN MODAL
+
+        const closeLoginModal = document.querySelectorAll(".form-container_iconX");
+        closeLoginModal.forEach((e) => {
+
+            e.addEventListener("click", () => {
+                bodyModal.classList.remove("open");
+        })
+        });
+
+        // END CLICK CLOSE LOGIN MODAL
+
         // ADVERTISEMENT MODAL
 
         const advertisementIcon = document.querySelector('.js-advertisement-icon');
