@@ -247,6 +247,7 @@
                         <a href="./assest/pageDetailsProduct/text-Commit-DetailsProduct/main/textCmIndexDetails.html">
                             <div class="showproduct-center_item--img">
                                 <img src='${product.image}'>
+                                
                             </div>
 
                             <span class="showproduct-center_item--span">${product.name}</span>
