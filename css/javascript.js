@@ -244,7 +244,7 @@
             for(let product of products){
                 out += `
                     <div class="showproduct-center_item">
-                        <a href="./assest/pageDetailsProduct/text-DetailProduct/DetailProducts.html">
+                        <a href="./assest/pageDetailsProduct/text-Commit-DetailsProduct/main/textCmIndexDetails.html">
                             <div class="showproduct-center_item--img">
                                 <img src='${product.image}'>
                             </div>
